@@ -20,3 +20,4 @@ total = 0
 for x in numbers:
 		total = total + x
 print "Numbers %s" %(numbers)
+print "Sum: %s" %(total)
