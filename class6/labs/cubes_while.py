@@ -10,3 +10,15 @@ Example Output:
 List of numbers: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 List of cubes: [0, 1, 8, 27, 64, 125, 216, 343, 512, 729]
 """
+listOfNumbers = range(10)
+print listOfNumbers
+cubes =[]
+
+animals = ['dog', 'zebra', 'giraffe', 'elephant', 'cat', 'lion', 'bear']
+three_letter_words = []
+count = None
+x = cubes
+while count < 10:
+	cubes.append(x*x*x)
+	count +=1
+	print count

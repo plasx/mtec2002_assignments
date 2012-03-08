@@ -14,3 +14,8 @@ Type quit to stop this program
 >quit
 Thanks!  See you later.
 """
+quitz = None
+while quitz == None or quitz != "quit":
+	print "Type quit to stop this program"
+	quitz =raw_input(">")
+print"thanks! see you later."
