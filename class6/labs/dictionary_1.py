@@ -18,41 +18,41 @@ superstitious_things["number"]
 http://docs.python.org/library/stdtypes.html#mapping-types-dict
 """
 # create an empty dictionary, set it to a variable named empty
-
+empty = {}
 # print out the empty dictionary
-
+print empty
 # create a dictionary that describes a pineapple using the keys name, type, and taste
-
+food1 = {"name":"pineapple","type":"fruit", "taste":"sweet"}
 # print out the dictionary 
-
+print food1	
 # create another dictionary that describes a lemon using the keys name, type, and taste
-
+food2 = {"name":"lemon","type":"fruit", "taste":"sour"}
 # print out the dictionary 
-
+print food2
 # print out the value at key name
-
+print food2["name"]
 # create a new key, color, by  using the new key and assigning it to a variable
-
+food2["color"] ="yellow"
 # print the value at the new key
-
+print food2["color"]
 # print the dictionary
-
+print food2
 # create a dictionary of four of your favorite things using the keys color, food, animal, and number
-
+my_favs = {"color":"red", "food":"macaroni", "animal":"chinchilla", "number":923}
 # print out the dictionary
-
+print my_favs
 # print out your favorite color
-
+print my_favs["color"]
 # print out your favorite number
-
+print my_favs["number"]
 # print out your favorite animal
-
+print my_favs["animal"]
 # print out your favorite animal and color in a sentence
-
+print "my fave animal is %s and my fav color is %s" % (my_favs["animal"], my_favs["color"])	
 # change your favorite number
-
+my_favs["number"] = 123
 # print out your favorite number
-
+print my_favs["number"]
 # change your favorite animal
 
 # print out your favorite animal
@@ -60,29 +60,35 @@ http://docs.python.org/library/stdtypes.html#mapping-types-dict
 # print out your dictionary
 
 # try printing an item with a key that doesn't exist
-
+#print my_favs["programming language"]
 # what happened?  comment out your previous line to continue
 
 # you can also use the get method on a dictionary to retrieve an element, but have a default value if the key doesn't exist
-
+my_favs.get("programming language", "javascript")
 # just like a list, you can use the del statement to delete a dictionary item
-
+del my_favs["number"]
 # print out the dictionary after deleting an element
-
+print my_favs
 # get the list of keys in your dictionary using the keys method, set it to a variable named my_keys
-
+my_keys = my_favs
 # print out the keys
-
+print my_keys
 # loop through the keys using a for loop, print out each element
-
+for k in my_keys:
+		print k
+		
 # get the list of values in your dictionary using the values method, set it to a variable named my_values
+my_values = my_favs.values()
 
 # print out the values
-
+print my_values
 # loop through the values using a for loop, print out each element
-
+for v in my_values:
+	print v	
 # get all of the key, value pairs of your dictionary as a list of tuples using the items method; set it to a variable called tuples
-
+tuples = my_favs.items()
+print tuples
 # print out this list
-
+for t in tuples
+	print t
 # loop through the list of tuples using a for loop, print out each tuple

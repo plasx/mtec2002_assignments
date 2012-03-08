@@ -14,11 +14,9 @@ listOfNumbers = range(10)
 print listOfNumbers
 cubes =[]
 
-animals = ['dog', 'zebra', 'giraffe', 'elephant', 'cat', 'lion', 'bear']
-three_letter_words = []
 count = None
 x = cubes
 while count < 10:
-	cubes.append(x*x*x)
+	cubes.append(cubes*cubes*cubes)
 	count +=1
 	print count

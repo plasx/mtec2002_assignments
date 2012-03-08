@@ -21,31 +21,37 @@ Where you've seen them before / why would you use one:
 3. In string formatting/string interpolation
 """
 # create a tuple with 2 strings
-
+animals = ("cat","dog")
 # print out the tuple
-
+print animals
 # define a tuple with 5 numbers
-
+numbers = (5, 4, 3, 2, 1)
 # print out the tuple
-
+print numbers
 # print out the 2nd element in the tuple
-
+print numbers[1]
 # try to change the value of the second element
-
+#numbers[1] = 22222
 # what happened?  comment out the line you just wrote to continue....
-
+# says object does not support item assignemnt
 # try using append() on a tuple to add another element
-
+#numbers.appened(222222)
 # what happened?  comment out the line you just wrote to continue....
-
+# no object attribute to appened
 # let's compare to lists: try creating a list and changing a value, it should work
-
+my_list = [1,2,3]
+my_list[1] = 22222
+print my_list
 # try appending an element to a list
-
+my_list.append(333333)
+print my_list
 # try using the tuple you created above in string formatting
-
+print "%s %s" % animals
 # let's do another... without using a variable
-
+print "%s %s" % ("hi" , "hello")
 # tuples can also be items in a list!
-
+crazy_list = [(1,2),(4,5),(4,4)]
+print crazy_list
 # let's iterate through them
+for x in crazy_list:
+		print x
