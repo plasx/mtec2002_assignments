@@ -46,7 +46,7 @@ Bye!
 """
 
 # this first variable is an example of how you would store an "image" in a variable
-tree =  """
+tree ="""
     /\\
    /  \\
    /  \\
@@ -54,3 +54,31 @@ tree =  """
     ||
 """
 
+truck="""
+      __
+ ____|  \_    
+|_________|
+  O     O
+"""
+
+heart="""
+  __  __
+ /  \/  \\
+  \    /
+    \/
+"""
+
+
+while True:
+	print "What picture should I draw? "
+	user_input = raw_input("> ")
+	if user_input == "tree":
+			print tree
+	elif user_input == "truck":
+			print truck
+	elif user_input == "heart":
+			print heart
+	elif user_input =="quit"
+			exit()
+	else:
+			print "I don't know how to draw that."
