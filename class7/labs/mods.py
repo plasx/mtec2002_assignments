@@ -23,29 +23,47 @@ Python has many built-in modules.  We'll go over 3 of those modules in this file
 	* math.ceil(a) - returns the smallest integer value that's greater than or equal to a
 	* math.sqrt(a) - returns the smallest integer value that's greater than or equal to a
 * sys - http://docs.python.org/library/sys.html
-	* math.argv - a list of all of the "commandline" arguments
+	* sys.argv - a list of all of the "commandline" arguments
 """
 # import the random, math and sys modules
+import random
+import math
+import sys
 
 ### random
 # create a list of mythical creatures, "unicorn", "dragon", and "yeti"... and assign it to a variable called creatures
 
+creatures=["unicorn", "dragon", "yeti"]
+
 # create a random number using the randint function between 0 and 2, set it to a variable named index
 
-# print out index
+index = random.randint(0,2)
 
+# print out index
+print index
 # ...now ...use the index to get an element from your list of creatures... print both the index and the creature out
+
+index = random.randint(0,2)
+print "%s, %s" % (index, creatures[index])
 
 # do it again (set index and print out a creature from the list)
 
+index = random.randint(0,2)
+print "%s, %s" % (index, creatures[index])
+
 # and again (set index and print out a creature from the list)
 
+index = random.randint(0,2)
+print "%s, %s" % (index, creatures[index])
 ### math
 # print out the closest integer that's greater that 7.8 using ceil
 
-# get the squareroot of 17 using the sqrt function
+print math.ceil(7.8)
 
+# get the squareroot of 17 using the sqrt function
+print math.sqrt(17)
 ### sys
 # print out the list of commandline arguments using argv
-
+print sys.argv
 # try running your file and adding a space and some text after your file name
+print "%s!!!!!!" % sys.argv[1]
