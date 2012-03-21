@@ -21,23 +21,29 @@ Some commands that you can use:
 """
 	
 # use the import statement to bring in the turtle module
-
+import turtle
 # use the import statement to bring in the random module
-
+import random
 # move the turtle foward 100 pixels
-
+turtle.forward(100)
 # turn the turtle 90 degrees to the left
-
+turtle.left(90)
 # move the turtle foward by a random number - between 5 and 20 - of pixels 
-
+turtle.forward(random.randint(5,20))
 # pick up the pen
-
+turtle.up()
 # move the turtle foward by a random number - between 5 and 20 - of pixels 
-
+turtle.forward(random.randint(5,20))
 # put the pen back down
-
+turtle.down()
 # use a for loop to repeat the previous 4 lines 7 times
-
+for x in range(7):
+	turtle.forward(random.randint(5,20))
+	turtle.up()
+	turtle.forward(random.randint(5,20))
+	turtle.down()
+	
 # use the goto method to move to the coordinate (-50, -100)
-
+turtle.goto(-50,-100)
 # start the main event loop (see #7)
+turtle.mainloop()
