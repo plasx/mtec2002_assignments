@@ -23,3 +23,5 @@ Code
 2.  Check out the documentation: http://pypi.python.org/pypi/upsidedown/0.3
 3.  Print the string "flip out!" upside-down using the function specified in the documentation
 """
+import upsidedown
+print upsidedown.transform('flip out!')
