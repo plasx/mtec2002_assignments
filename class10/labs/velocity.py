@@ -35,3 +35,10 @@ distance: 42, time: "asdf"
 I don't think you put in two numbers.
 >
 """
+
+while True:
+		cookeddistance = raw_input('Give me the distance >')
+		cookedtimes = raw_input('putt time > ')
+		float(cookedtimes)
+		float(cookeddistance)
+		print cookedtimes / cookeddistance

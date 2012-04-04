@@ -9,3 +9,16 @@ ascii_times.py
 6. what happens if we input a non-numeric value for number of times
 7. what happens if we input a key that doesn't exist?
 """
+d = {"heart":"<3", "person":">-|o","tree":"<-~-~-"}
+while True:
+		print "gimmeh a key"
+		key = raw_input('>')
+		print "gimmeh number of times"
+		num = raw_input('>')
+		print d[key]
+		try:
+				print d[key] * int(num)
+		except KeyError:
+				print " key does not exsits"
+		except ValueError:
+				print " FOOLISH"
