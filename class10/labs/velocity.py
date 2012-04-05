@@ -37,8 +37,14 @@ I don't think you put in two numbers.
 """
 
 while True:
-		cookeddistance = raw_input('Give me the distance >')
-		cookedtimes = raw_input('putt time > ')
-		float(cookedtimes)
-		float(cookeddistance)
-		print cookedtimes / cookeddistance
+	print "distance:"
+	d = raw_input('>')
+	print "time:"
+	t = raw_input('>')
+	print "Velocity"
+	try:
+		print float(d) / float(t)
+	except ZeroDivisionError:
+		print "cant divide by zero, you moron"
+	except ValueError:
+		print "value errorr no do something eright"

@@ -29,3 +29,15 @@ PROGRAM
 7. try a url that you know is missing; what status code do you get?
 8. notice all of the repeated code?  how could we reduce the redundant code?
 """
+
+import requests
+url = "http://isitchristmas.com"
+req = requests.get(url)
+print req.txt
+print req.status_code
+
+
+import requests 
+urls = ["http://crhistmas"."http://meringmedia"]
+fur url in urls:
+		req = requests.get(url)
