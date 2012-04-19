@@ -40,7 +40,33 @@ Expected Output:
 """
 
 # we want to create our own data type - we already have strings, lists, etc
-# define a class called point, use pass 
+import math
+
+class Point:
+		def __init__(self, x, y):
+				self.x = x
+				self.y = y
+		def __str__(self):
+				return "(x:%s y:%s)" % (self.x, self.y)
+		
+		def distance_from(self, p):
+				d = math.sqrt(math.pow(p.x - self.x, 2) + math.pow(p.y - self.y, 2))
+		def reset_to_origin(self):
+				self.x = 0
+				self.y = 0
+
+a = Point(5, 10)
+print a
+print a.x
+print a.y
+b = Point(-1, -5)
+print a
+print b.x
+print b.y
+print "______________"
+a.reset_to_origin
+print a
+# define a class called point, use pass
 # try using point by instantiating it
 # try to access an attribute on the fly, run your program
 # remove the previous, then try assigning an attribute on the fly... run your program
