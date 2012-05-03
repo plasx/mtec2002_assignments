@@ -20,3 +20,15 @@ http://docs.python.org/howto/sockets.html
 	server = SocketServer.TCPServer((HOST, PORT), EchoServer)
 11. Start the server by calling serve_forever on the instance of TCPServer that you just created
 """
+import SocketServer
+class EchoServer(SocketServer.BaseRequestHandler):
+	def handle(self):
+			data = self.request.recv(1024)
+			print data
+			self.request.send(data)
+			
+if __name__ == "__main__":
+		HOST = 'localhost'
+		PORT = 9999
+		server = SocketServer.TCPServer((HOST, PORT), EchoServer) 
+		server.serve_forever()
